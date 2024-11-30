@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationConfiguration>
+    <Application>
+        <Name>Tag Manager</Name>
+        <Version>1.0</Version>
+        <Description>Configuration for the Tag Manager application</Description>
+    </Application>
+    <Settings>
+        <BaseURL>_api/tag-manager/api/v1/tags/</BaseURL>
+        <APIRoutes>
+            <Sites>sites/</Sites>
+        </APIRoutes>
+        <Keys>
+            <AppID>22bef345-3c5b-4c18-b782-74d4085112ff</AppID>
+        </Keys>
+    </Settings>
+    <Events>
+        <Event name="TagManagerLoaded">TagManagerLoaded</Event>
+        <Event name="TagLoading">LoadingTags</Event>
+        <Event name="TagLoaded">TagLoaded</Event>
+        <Event name="TagLoadError">TagLoadError</Event>
+    </Events>
+    <ErrorHandling>
+        <ErrorLogLevel>Debug</ErrorLogLevel>
+        <ParseError>LogParseError</ParseError>
+    </ErrorHandling>
+    <Policy>
+        <ConsentPolicyManager>
+            <InitPolicy>true</InitPolicy>
+        </ConsentPolicyManager>
+    </Policy>
+</ApplicationConfiguration>

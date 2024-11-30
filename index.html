@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection with Jacobian</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Fraud Detection System</h1>
+    <form id="jacobian-form">
+      <label for="partial-x-u">∂x/∂u:</label>
+      <input type="number" step="0.01" id="partial-x-u" required>
+      
+      <label for="partial-x-v">∂x/∂v:</label>
+      <input type="number" step="0.01" id="partial-x-v" required>
+      
+      <label for="partial-y-u">∂y/∂u:</label>
+      <input type="number" step="0.01" id="partial-y-u" required>
+      
+      <label for="partial-y-v">∂y/∂v:</label>
+      <input type="number" step="0.01" id="partial-y-v" required>
+      
+      <button type="button" id="calculate-btn">Calculate Jacobian</button>
+    </form>
+    <div id="result">
+      <h2>Jacobian Determinant: <span id="jacobian-value">N/A</span></h2>
+    </div>
+    <div id="status">
+      <h2>Fraud Status: <span id="fraud-status">Pending</span></h2>
+    </div>
+
+    <canvas id="jacobian-chart" width="400" height="200"></canvas>
+  </div>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:jirqf2lahb5swroultgjv7gw/app.bsky.feed.post/3lbjwp5mkac2y" data-bluesky-cid="bafyreihcryyausu5jzziwboltpaphxfrygsmcamhsn3esabzuz5cms5zby"><p lang="en">Exploring the intersection of programming languages like Java, C++, and Assembly reveals the evolution of pointers and references. While C++ utilizes pointers for direct memory access, Java opts for references to enhance safety and consistency. www.geeksforgeeks.org/is-there-any...<br><br><a href="https://bsky.app/profile/did:plc:jirqf2lahb5swroultgjv7gw/post/3lbjwp5mkac2y?ref_src=embed">[image or embed]</a></p>&mdash; johnbel.bsky.social (<a href="https://bsky.app/profile/did:plc:jirqf2lahb5swroultgjv7gw?ref_src=embed">@johnbel.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:jirqf2lahb5swroultgjv7gw/post/3lbjwp5mkac2y?ref_src=embed">November 22, 2024 at 7:03 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+  <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:d6ehsajlj6b7i34dnkv6aoiu/app.bsky.feed.post/3lbjwx4fdv22w" data-bluesky-cid="bafyreiescevtfwp2laewyyr5rvl6gblc72grliouzai4f3uqp6acpfvyhe"><p lang="en">So wire fraud?</p>&mdash; Blazes Boylan (<a href="https://bsky.app/profile/did:plc:d6ehsajlj6b7i34dnkv6aoiu?ref_src=embed">@blazesboylan.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:d6ehsajlj6b7i34dnkv6aoiu/post/3lbjwx4fdv22w?ref_src=embed">November 22, 2024 at 7:07 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+    

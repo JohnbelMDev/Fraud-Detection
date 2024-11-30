@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fraudSystem>
+  <settings>
+    <thresholds>
+      <transactionLimit>5000</transactionLimit>
+      <suspiciousActivityScore>75</suspiciousActivityScore>
+    </thresholds>
+    <alerts>
+      <emailNotification>true</emailNotification>
+      <smsNotification>false</smsNotification>
+    </alerts>
+  </settings>
+  <security>
+    <encryption>enabled</encryption>
+    <apiAccess>restricted</apiAccess>
+  </security>
+</fraudSystem>
